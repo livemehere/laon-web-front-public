@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: BRB;
+  src: url("../assets/fonts/배스킨라빈스 B.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom */
+
+.laon-colorful-bg {
+  background: linear-gradient(to right, #62fde5 0%, #f19fd6 100%);
+}
+
+.card-review-text {
+  color: #334989;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.card-image img {
+  transition: all 300ms;
+}
+
+.card-image:hover > img {
+  transform: scale(1.1);
+}
+
+.card-price-sale {
+  color: #979797;
+  font-weight: 500;
+  position: relative;
+}
+.card-price-sale::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 120%;
+  height: 50px;
+  top: -26px;
+  left: 0;
+  background-color: #bbbfc3;
+  clip-path: polygon(0 69%, 84% 69%, 84% 73%, 69% 88%, 63% 89%, 79% 73%, 0 73%);
+}
+
+/* 개인정보취급방침 */
+.laon-table thead tr th {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  text-align: center; 
+}
+
+.laon-table tbody tr td {
+  padding:.4em;
+}   
+
+.laon-table tbody tr td {
+  border: 1px solid black;                                      
+}
+
+.children-margin > *{
+  margin-bottom: 1em;
+}
+
+/* 상품 디테일 */
+
+.product-info-table tr td p {
+  @apply tw-mb-0;
+}
+.product-info-table tr th{
+  @apply tw-border-r-[1.5px] tw-border-gray-200 tw-w-[150px];
+}
+
+.product-info-table tr{
+  @apply tw-border-b-[1.5px] tw-border-gray-200;
+}
+
+.product-info-table tr td{
+  @apply tw-p-5;
+}
+
+.divide_bottom div{
+  padding: 1em ;
+  border-bottom: 1px solid #ececec;
+  font-size: 1em;
+}
+
+.divide_bottom:hover div{
+  background: #F4FAFD;
+  font-weight: 600;
+  color: #334989;
+}
+
+.nav-link{
+  color: gray !important;
+}
+
+/* input 스타일링 */
+.laon-input{
+  @apply tw-w-[100%] tw-p-2 tw-border-[1px] tw-border-gray-300;
+}
+/* admin */
+
+.admin_box_shadow{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* naver login button */
+
+#naverIdLogin_loginButton img{
+  height: 100% !important;
+}
+
+/*premium*/
+
+.premium_title{
+  /* Style for "라온디어스 체험단" */
+  text-shadow: 0 0 4px rgba(19, 0, 75, 0.22);
+  color: #ffffff;
+  font-family: BRB;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.premium_sub_title{
+  /* Style for "laondeas e" */
+  text-shadow: 0 0 4px rgba(19, 0, 75, 0.22);
+  color: #ffffff;
+  font-family: BRB;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.premium_list{
+  /* Style for "naver blog" */
+  text-shadow: 0 0 4px rgba(19, 0, 75, 0.22);
+  color: #ffffff;
+  font-family: BRB;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  /* Text style for "n, aver bl" */
+  letter-spacing: 0.65px;
+  line-height: normal;
+  min-width: 1000px;
+}
+
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*admin user*/
+.admin-user-span{
+  @apply tw-font-bold;
+}
+
+.laon-btn{
+  @apply tw-bg-primary tw-w-[100%] tw-text-white tw-py-2;
+}
